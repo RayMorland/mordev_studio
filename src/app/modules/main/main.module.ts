@@ -1,0 +1,27 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { MainRoutingModule } from './main-routing.module';
+import { HomeComponent } from './pages/home/home.component';
+import { WorkComponent } from './pages/work/work.component';
+import { AboutComponent } from './pages/about/about.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { CaseStudyComponent } from './pages/case-study/case-study.component';
+import { BlogPostComponent } from './pages/blog-post/blog-post.component';
+
+@NgModule({
+  declarations: [
+    HomeComponent,
+    WorkComponent,
+    AboutComponent,
+    BlogComponent,
+    ContactComponent,
+    CaseStudyComponent,
+    BlogPostComponent
+  ],
+  imports: [
+    CommonModule,
+    MainRoutingModule
+  ]
+})
+export class MainModule { }

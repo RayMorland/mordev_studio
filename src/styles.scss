@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-page-container {
+    padding: 200px 120px;
+}

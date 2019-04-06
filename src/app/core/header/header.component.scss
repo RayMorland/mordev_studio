@@ -1,0 +1,48 @@
+.navbar {
+    margin-top: 70px;
+    padding: 0 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+
+.left-navbar {
+    display: inline-block;
+}
+
+.right-navbar {
+    display: inline-block;
+}
+
+li {
+    text-align: right;
+}
+
+.logo-home-link {
+    font-family: 'Heebo', sans-serif;
+    text-decoration: none;
+    color: rgb(41, 41, 41);
+    font-weight: 800;
+    font-size: 2vw;
+}
+
+.header-nav-link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Muli', monospace;
+    font-size: .8vw;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.header-nav-links {
+    list-style: none;
+    padding-left: 0;
+}

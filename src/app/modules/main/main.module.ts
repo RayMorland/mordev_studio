@@ -9,6 +9,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { CaseStudyComponent } from './pages/case-study/case-study.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 import { HomeCaseStudyComponent } from './components/cases/home-case-study/home-case-study.component';
+import { HomeServiceComponent } from './components/services/home-service/home-service.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HomeCaseStudyComponent } from './components/cases/home-case-study/home-
     ContactComponent,
     CaseStudyComponent,
     BlogPostComponent,
-    HomeCaseStudyComponent
+    HomeCaseStudyComponent,
+    HomeServiceComponent
   ],
   imports: [
     CommonModule,

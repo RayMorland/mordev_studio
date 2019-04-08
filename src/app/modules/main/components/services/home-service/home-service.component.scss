@@ -1,0 +1,18 @@
+.home-service {
+    width: 50%;
+    height: 70vh;
+    overflow: hidden;
+    float: right;
+    padding: 3vw;
+    position: relative;
+}
+
+.home-service:hover {
+    cursor: pointer;
+}
+
+.home-service-inside {
+    width: auto;
+    height: 100%;
+    position: relative;
+}

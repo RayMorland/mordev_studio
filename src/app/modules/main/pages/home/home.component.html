@@ -10,15 +10,23 @@
     </div>
   </section>
   <section class="home-section home-work-section">
-    <div *ngFor="let case of casesData">
+    <div *ngFor="let case of casesData" class="cases">
       <app-home-case-study [caseStudy]="case"></app-home-case-study>
     </div>
   </section>
   <section class="home-section home-services-section">
-
+    <div class="home-services-section-inside">
+      <h1>we’re <span style="color: white">technologists</span> and <span style="color: white">entrepreneurs</span>, so
+        we understand both the technical and business challenges of creating digital products.</h1>
+    </div>
   </section>
   <section class="home-section home-testimonials-section">
-
+    <div class="services-grid-member">
+      <h1>Services</h1>
+    </div>
+    <div *ngFor="let service of servicesData" class="services">
+      <app-home-service [service]="service"></app-home-service>
+    </div>
   </section>
   <section class="home-section home-blog-section">
 

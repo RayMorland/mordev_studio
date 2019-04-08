@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { testData } from '../../../../shared/testing/test-data';
+import { testCases, testServices } from '../../../../shared/testing/test-data';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +8,8 @@ import { testData } from '../../../../shared/testing/test-data';
 })
 export class HomeComponent implements OnInit {
   
-  casesData = testData;
+  casesData = testCases;
+  servicesData = testServices;
 
   constructor() { }
 

@@ -1,0 +1,55 @@
+.home-case-study {
+    width: 50%;
+    height: 70vh;
+    overflow: hidden;
+    float: right;
+    padding: 3vw;
+    position: relative;
+}
+
+.home-case-study:hover {
+    cursor: pointer;
+}
+
+.home-case-study-inside {
+    width: auto;
+    height: 100%;
+    position: relative;
+}
+
+.case-study-overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 0%;
+    color: white;
+    background-color: black;
+    transition: width .5s;
+    overflow: hidden;
+}
+
+.home-case-study-inside:hover .case-study-overlay {
+    width: 100%;
+    opacity: 1;
+}
+
+.case-study-overlay-header {
+    position: absolute;
+    top: 5vh;
+    left: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 83%;
+    width: 50%;
+    opacity: 0;
+    white-space: nowrap;
+    transition-delay: .3s;
+    transition: opacity .5s;
+}
+
+.home-case-study-inside:hover .case-study-overlay-header {
+    opacity: 1;
+}

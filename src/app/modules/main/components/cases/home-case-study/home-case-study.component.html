@@ -1,0 +1,10 @@
+<div *ngIf="caseStudy" class="home-case-study">
+  <div class="home-case-study-inside" [ngStyle]="setStyles()" (click)="navigateTo()">
+    <div class="case-study-overlay">
+      <div class="case-study-overlay-header">
+        <h3>{{ caseStudy.title }}</h3>
+        <span>View Case</span>
+      </div>
+    </div>
+  </div>
+</div>

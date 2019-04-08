@@ -8,6 +8,7 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CaseStudyComponent } from './pages/case-study/case-study.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
+import { HomeCaseStudyComponent } from './components/cases/home-case-study/home-case-study.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BlogPostComponent } from './pages/blog-post/blog-post.component';
     BlogComponent,
     ContactComponent,
     CaseStudyComponent,
-    BlogPostComponent
+    BlogPostComponent,
+    HomeCaseStudyComponent
   ],
   imports: [
     CommonModule,

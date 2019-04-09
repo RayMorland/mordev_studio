@@ -5,14 +5,16 @@
     float: right;
     padding: 3vw;
     position: relative;
-}
-
-.home-service:hover {
-    cursor: pointer;
+    
 }
 
 .home-service-inside {
     width: auto;
     height: 100%;
     position: relative;
+    background-color: rgb(240,240,240);
+}
+
+.home-service-inside:hover {
+    cursor: pointer;
 }

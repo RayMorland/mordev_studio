@@ -1,7 +1,7 @@
 <div class="main-page-container">
   <section class="home-section home-landing-section">
     <div class="lrg-background-text">
-      MORDEV STUDIO.
+      <h1>MORDEV STUDIO.</h1>
     </div>
     <div class="landing-text-wrapper">
       <h1>hello there,<br>we are <span style="color: black">mordev studio.</span><br>we design things.</h1>
@@ -21,32 +21,40 @@
     </div>
   </section>
   <section class="home-section home-services-section">
-    <div class="services-grid-member">
+    <!-- <div class="services-grid-member">
       <div class="services-grid-member-inside">
         <h1>Services</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean
           vel hendrerit ligula.</p>
-        <a routerLink="/about">See all services</a>
+        <a routerLink="/">See all services</a>
       </div>
-    </div>
+    </div> -->
     <div *ngFor="let service of servicesData" class="services">
       <app-home-service [service]="service"></app-home-service>
     </div>
   </section>
   <section class="home-section home-testimonials-section">
     <div class="home-testimonials-section-inside testimonial">
-      <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec
-        condimentum nisi. Aenean
-        vel hendrerit ligula.</p>
+      <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean vel hendrerit ligula.</p>
       <div class="testimonial-info">
         <h4 class="testimonial-name">John Smith</h4>
         <h5 class="testimonial-company">Company Inc.</h5>
       </div>
-      <div class="testimonial-nav">Navigate</div>
+      <div class="testimonial-nav">
+        <- 01/06 ->
+      </div>
     </div>
   </section>
   <section class="home-section home-blog-section">
-
+    <div class="home-blog-section-inside">
+      <div *ngFor="let blogpost of blogpostData">
+          <app-home-blogposts [blogpost]="blogpost"></app-home-blogposts>
+      </div>
+    </div>
   </section>
-  <section class="home-section home-start-section"></section>
+  <section class="home-section home-start-section">
+    <div class="home-start-section-inside">
+      <h1>ready to start your project?</h1>
+    </div>
+  </section>
 </div>

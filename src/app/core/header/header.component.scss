@@ -24,6 +24,15 @@
     display: inline-block;
 }
 
+.header-email {
+    position: fixed;
+    left: 0px;
+    bottom: 6vw;
+    transform: rotate(-90deg);
+    color: black !important;
+    text-decoration: none !important;
+}
+
 li {
     text-align: right;
 }

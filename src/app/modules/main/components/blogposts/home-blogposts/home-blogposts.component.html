@@ -1,0 +1,9 @@
+<div *ngIf="blogpost" class="home-blogpost">
+  <div class="home-blogpost-content" [ngStyle]="setStyles()" (click)="navigateTo()">
+    <div class="background-filter"></div>
+    <div class="blogpost-info">
+        <h3 class="blogpost-title">{{ blogpost.title }}</h3>
+        <h4 class="blogpost-date">{{ blogpost.date }}</h4>
+    </div>
+  </div>
+</div>

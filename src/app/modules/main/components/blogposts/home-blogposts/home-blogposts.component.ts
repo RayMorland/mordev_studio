@@ -2,13 +2,12 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-home-service',
-  templateUrl: './home-service.component.html',
-  styleUrls: ['./home-service.component.scss']
+  selector: 'app-home-blogposts',
+  templateUrl: './home-blogposts.component.html',
+  styleUrls: ['./home-blogposts.component.scss']
 })
-export class HomeServiceComponent implements OnInit {
-  @Input() service: any;
-  infoOpen = false;
+export class HomeBlogpostsComponent implements OnInit {
+  @Input() blogpost: any;
 
   constructor(
     private router: Router
@@ -19,7 +18,7 @@ export class HomeServiceComponent implements OnInit {
 
   setStyles() {
     const styles = {
-      'background-image': 'url(' + this.service.image + ')',
+      'background-image': 'url(' + this.blogpost.image + ')',
       'background-position': 'center',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
@@ -27,7 +26,7 @@ export class HomeServiceComponent implements OnInit {
     return styles;
   }
 
-  openServiceInfo(): void {
-    this.infoOpen = !this.infoOpen;
+  navigateTo(): void {
+    this.router.navigate(['/blog/' + this.blogpost._id]);
   }
 }

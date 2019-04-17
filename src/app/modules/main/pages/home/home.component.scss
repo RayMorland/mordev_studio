@@ -5,7 +5,7 @@
 }
 
 .home-section {
-    min-height: 50vh;
+    min-height: 10vh;
     padding-top: 0vh;
     padding-bottom: 0vh;
 }
@@ -29,12 +29,15 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
     z-index: 2;
+    padding-bottom: 6vw;
 }
 
 .landing-text-wrapper h1 {
     color: rgb(223, 223, 223);
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .landing-text-wrapper p {
@@ -45,22 +48,26 @@
     height: 100vh;
     top: 0;
     left: 25vw;
-    font-size: 50vh;
-    font-weight: 800;
     position: absolute;
     text-align: center;
+    padding-top: 40vh;
+}
+
+.lrg-background-text h1 {
+    font-size: 50vh;
+    font-weight: 800;
     z-index: 1;
     color: rgba(255,255,255,1);
     white-space: nowrap;
     text-shadow: 0 0 200px rgba(246,246,246,.5);
 }
 
-.home-work-section, .home-services-section {
+.home-work-section, .home-services-section, .home-blog-section {
     padding-left: 9vw;
     padding-right: 9vw;
 }
 
-.home-about-section, .home-testimonials-section {
+.home-about-section, .home-testimonials-section, .home-start-section {
     padding-top: 3vw;
     padding-bottom: 3vw;
 }
@@ -122,16 +129,37 @@
 .testimonial-content {
     font-size: 2vw;
     color: rgb(223, 223, 223);
+    margin-bottom: 50px;
 }
 
 .testimonial-info {
     height: auto;
+    margin-bottom: 80px;
 }
 
 .testimonial-name {
     display: block;
+    margin-bottom: 7px;
 }
 
 .testimonial-company {
     display: block;
 }
+
+.home-blog-section {
+
+}
+
+.home-blog-section-inside {
+
+}
+
+.home-start-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6vw;
+    min-height: 100vh;
+}
+

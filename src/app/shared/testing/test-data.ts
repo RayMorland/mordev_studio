@@ -41,32 +41,58 @@ export const testCases = [
 
 export const testServices = [
     {
-        'title': 'Company',
+        'title': 'Branding',
         'description': 'Short Description',
         'services': [
             'Branding'
         ],
         'image': 'https://images.unsplash.com/photo-1529119368496-2dfda6ec2804?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80',
-        'content': '',
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean vel hendrerit ligula.',
         'primaryColor': 'blue'
     },
     {
-        'title': 'Company',
+        'title': 'Design',
         'description': 'Short Description',
         'services': [
             'Branding'
         ],
         'image': 'https://images.unsplash.com/photo-1498075702571-ecb018f3752d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2714&q=80',
-        'content': '',
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean vel hendrerit ligula.',
         'primaryColor': 'red'
     },
     {
-        'title': 'Company',
+        'title': 'Web',
         'description': 'Short Description',
         'services': [
             'Branding'
         ],
         'image': 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80',
-        'content': ''
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean vel hendrerit ligula.'
     },
 ]
+
+export const testBlogposts =
+    [
+        {
+            '_id': '1',
+            'title': 'Title of a Blogpost',
+            'description': 'Short Description',
+            'services': [
+                'Branding'
+            ],
+            'image': 'https://images.unsplash.com/photo-1498075702571-ecb018f3752d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2714&q=80',
+            'content': '',
+            'date': 'April 15, 2019'
+        },
+        {
+            '_id': '2',
+            'title': 'This is a Blogpost',
+            'description': 'Short Description',
+            'services': [
+                'Branding'
+            ],
+            'image': 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80',
+            'content': '',
+            'date': 'April 15, 2019'
+        }
+    ] 

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { testCases, testServices } from '../../../../shared/testing/test-data';
+import { testCases, testServices, testBlogposts } from '../../../../shared/testing/test-data';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,10 @@ import { testCases, testServices } from '../../../../shared/testing/test-data';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  
+
   casesData = testCases;
   servicesData = testServices;
+  blogpostData = testBlogposts;
 
   constructor() { }
 

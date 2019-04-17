@@ -1,7 +1,13 @@
 <div *ngIf="service" class="home-service">
-  <div class="home-service-inside" [ngStyle]="setStyles()" (click)="navigateTo()">
-    <div class="service-overlay">
-
+  <div class="home-service-inside" [ngStyle]="setStyles()" (click)="openServiceInfo()">
+    <div class="service-overlay" [ngClass]="{'open': infoOpen}"></div>
+    <div class="service-info" [ngClass]="{'open': infoOpen}">
+      <div class="service-info-inside" [ngClass]="{'open': infoOpen}">
+        <p>{{ service.content }}</p>
+      </div>
+    </div>
+    <div class="service-title-wrapper" [ngClass]="{'open': infoOpen}">
+      <h3 class="service-title">{{ service.title }}</h3>
     </div>
   </div>
 </div>

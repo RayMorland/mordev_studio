@@ -13,6 +13,7 @@ body {
     width: 100vw;
     min-height: 100vh;
     font-family: 'Poppins', sans-serif;
+    background-color: rgb(250, 250, 250);
 }
 
 * {
@@ -21,6 +22,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, p {
     display: inline-block;
+    margin: 0;
 }
 
 h1 {
@@ -44,4 +46,9 @@ section {
     padding-bottom: 10vh;
     height: auto;
     overflow: auto;
+}
+
+.main-page-container {
+    background-color: rgb(250, 250, 250);
+    min-height: 100vh;
 }

@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { BlogService } from 'src/app/shared/blog/blog.service';
+
 
 @Component({
   selector: 'app-blog-post',
@@ -7,9 +11,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogPostComponent implements OnInit {
 
-  constructor() { }
+  @Input() blogpost: any;
 
-  ngOnInit() {
+  constructor(
+    private route: ActivatedRoute,
+    private blogService: BlogService,
+    private location: Location
+  ) { }
+
+  ngOnInit(): void {
+    this.getHero();
   }
 
+  getHero(): void {
+    const id = this.route.snapshot.paramMap.get('id');
+    this.blogService.getBlogpost(id)
+      .subscribe(blogpost => this.blogpost = blogpost);
+  }
+
+  goBack(): void {
+    this.location.back();
+  }
 }

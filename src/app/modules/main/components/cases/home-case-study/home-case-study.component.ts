@@ -17,16 +17,16 @@ export class HomeCaseStudyComponent implements OnInit {
   }
 
   setStyles() {
-    let styles = {
+    const styles = {
       'background-image': 'url(' + this.caseStudy.image + ')',
       'background-position': 'center',
       'background-size': 'cover',
       'background-repeat': 'no-repeat',
-    }
+    };
     return styles;
   }
 
   navigateTo(): void {
-    this.router.navigate(['/work']);
+    this.router.navigate(['/work/' + this.caseStudy._id]);
   }
 }

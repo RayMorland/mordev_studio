@@ -20,10 +20,10 @@ export class BlogPostComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getHero();
+    this.getBlogpost();
   }
 
-  getHero(): void {
+  getBlogpost(): void {
     const id = this.route.snapshot.paramMap.get('id');
     this.blogService.getBlogpost(id)
       .subscribe(blogpost => this.blogpost = blogpost);

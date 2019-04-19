@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { testBlogposts } from '../../../../shared/testing/test-data';
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
+  blogposts = testBlogposts;
+
   constructor() { }
 
   ngOnInit() {
+
   }
 
 }

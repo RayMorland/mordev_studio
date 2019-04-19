@@ -1,5 +1,6 @@
 export const testCases = [
     {
+        '_id': '1',
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -10,6 +11,7 @@ export const testCases = [
         'primaryColor': 'blue'
     },
     {
+        '_id': '2',
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -20,6 +22,7 @@ export const testCases = [
         'primaryColor': 'red'
     },
     {
+        '_id': '3',
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -29,6 +32,7 @@ export const testCases = [
         'content': ''
     },
     {
+        '_id': '4',
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -96,3 +100,22 @@ export const testBlogposts =
             'date': 'April 15, 2019'
         }
     ] 
+
+
+export const testTestimonials = [
+    {
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis.',
+        'name': 'Jane Doe',
+        'company': 'Company Inc.'
+    },
+    {
+        'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean vel hendrerit ligula.',
+        'name': 'John Smith',
+        'company': 'Company Inc.'
+    },
+    {
+        'content': 'Consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean vel hendrerit ligula.',
+        'name': 'Billy Bob',
+        'company': 'Company Inc.'
+    }
+]

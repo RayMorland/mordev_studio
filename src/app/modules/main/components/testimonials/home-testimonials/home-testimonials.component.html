@@ -1,3 +1,18 @@
-<p>
-  home-testimonials works!
-</p>
+<div class="testimonial">
+  <p class="testimonial-content">{{ currentTestimonial.content }}</p>
+  <div>
+    <div class="testimonial-info">
+      <h4 class="testimonial-name">{{ currentTestimonial.name }}</h4>
+      <h5 class="testimonial-company">{{ currentTestimonial.company }}</h5>
+    </div>
+    <div class="testimonial-nav">
+      <span class="left-arrow" (click)="changeTestimonial(-1)">
+        <i class="material-icons">arrow_right_alt</i>
+      </span>
+      {{ currentIndex }} / {{ testimonialsLength }}
+      <span class="right-arrow" (click)="changeTestimonial(1)">
+        <i class="material-icons">arrow_right_alt</i>
+      </span>
+    </div>
+  </div>
+</div>

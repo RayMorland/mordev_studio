@@ -21,28 +21,13 @@
     </div>
   </section>
   <section class="home-section home-services-section">
-    <!-- <div class="services-grid-member">
-      <div class="services-grid-member-inside">
-        <h1>Services</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean
-          vel hendrerit ligula.</p>
-        <a routerLink="/">See all services</a>
-      </div>
-    </div> -->
     <div *ngFor="let service of servicesData" class="services">
       <app-home-service [service]="service"></app-home-service>
     </div>
   </section>
   <section class="home-section home-testimonials-section">
     <div class="home-testimonials-section-inside testimonial">
-      <p class="testimonial-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean vel hendrerit ligula.</p>
-      <div class="testimonial-info">
-        <h4 class="testimonial-name">John Smith</h4>
-        <h5 class="testimonial-company">Company Inc.</h5>
-      </div>
-      <div class="testimonial-nav">
-        <- 01/06 ->
-      </div>
+      <app-home-testimonials [testimonials]="testimonialData"></app-home-testimonials>
     </div>
   </section>
   <section class="home-section home-blog-section">
@@ -54,7 +39,7 @@
   </section>
   <section class="home-section home-start-section">
     <div class="home-start-section-inside">
-      <h1>ready to start your project?</h1>
+      <h1>ready to <span style="color: black">start</span> your project?</h1>
     </div>
   </section>
 </div>

@@ -2,4 +2,9 @@
   <section>
     <h1>Work</h1>
   </section>
+  <section>
+    <div *ngFor="let case of caseStudies">
+      <app-home-case-study [caseStudy]="case"></app-home-case-study>
+    </div>
+  </section>
 </div>

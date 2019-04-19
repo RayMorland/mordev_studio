@@ -2,4 +2,9 @@
   <section>
     <h1>Blog</h1>
   </section>
+  <section>
+    <div *ngFor="let blogpost of blogposts">
+      <app-home-blogposts [blogpost]="blogpost"></app-home-blogposts>
+    </div>
+  </section>
 </div>

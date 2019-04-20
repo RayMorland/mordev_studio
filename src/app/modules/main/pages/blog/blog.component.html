@@ -1,9 +1,26 @@
 <div class="main-page-container">
-  <section>
-    <h1>Blog</h1>
+  <section class="page-heading">
+    <h1>This is a <span style="color: black">Blog</span></h1>
   </section>
-  <section>
-    <div *ngFor="let blogpost of blogposts">
+  <section class="blog-navigation">
+    <div class="nav-button">All</div>
+    <div class="nav-button">Design</div>
+    <div class="nav-button">Ideas</div>
+    <div class="nav-button">Web</div>
+  </section>
+  <section class="blogposts-section">
+    <div *ngIf="firstBlogpost" class="first-blogpost">
+      <div class="first-blogpost-inside">
+        <div class="first-blogpost-right" [ngStyle]="setStyles()" (click)="navigateTo()">
+          <div class="first-blogpost-filter"></div>
+          <div class="first-blogpost-content">
+            <h2>{{ firstBlogpost.title }}</h2>
+            <h4>{{ firstBlogpost.date }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let blogpost of otherBlogposts">
       <app-home-blogposts [blogpost]="blogpost"></app-home-blogposts>
     </div>
   </section>

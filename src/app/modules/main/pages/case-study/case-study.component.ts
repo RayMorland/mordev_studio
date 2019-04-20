@@ -31,4 +31,14 @@ export class CaseStudyComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+
+  setStyles() {
+    const styles = {
+      'background-image': 'url(' + this.caseStudy.image + ')',
+      'background-position': 'center',
+      'background-size': 'cover',
+      'background-repeat': 'no-repeat',
+    };
+    return styles;
+  }
 }

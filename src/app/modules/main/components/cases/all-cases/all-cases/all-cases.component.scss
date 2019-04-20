@@ -1,0 +1,58 @@
+.home-case-study {
+    width: 25%;
+    height: 20vw;
+    overflow: hidden;
+    float: left;
+    padding: 0vw;
+    position: relative;
+}
+
+.home-case-study:hover {
+    cursor: pointer;
+}
+
+.home-case-study-inside {
+    width: auto;
+    height: 100%;
+    position: relative;
+    background-color: rgb(240,240,240);
+}
+
+.case-study-overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    color: white;
+    background-color: rgba(30, 30, 30, .25);
+    opacity: 0;
+    transition: all .25s;
+    overflow: hidden;
+}
+
+.home-case-study-inside:hover .case-study-overlay {
+    width: 100%;
+    opacity: 1;
+}
+
+.case-study-overlay-header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+    transition-delay: .3s;
+    transition: opacity .75s;
+    padding: 1.5vw;
+}
+
+.home-case-study-inside:hover .case-study-overlay-header {
+
+}
+
+.case-study-overlay-header h3 {
+
+}

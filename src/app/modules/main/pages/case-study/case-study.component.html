@@ -1,5 +1,7 @@
 <div class="main-page-container">
-  <section>
-    <h1>{{ caseStudy.title }}</h1>
+  <section class="case-study-heading" [ngStyle]="setStyles()">
+    <div class="case-study-heading-filter"></div>
+    <h1 class="case-study-heading-company">{{ caseStudy.title }}</h1>
   </section>
+  <section class="case-study-content"></section>
 </div>

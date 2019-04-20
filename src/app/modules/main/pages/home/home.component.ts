@@ -8,9 +8,9 @@ import { testCases, testServices, testBlogposts, testTestimonials } from '../../
 })
 export class HomeComponent implements OnInit {
 
-  casesData = testCases;
+  casesData = testCases.slice(0, 4);
   servicesData = testServices;
-  blogpostData = testBlogposts;
+  blogpostData = testBlogposts.slice(0, 2);
   testimonialData = testTestimonials;
 
   constructor() { }

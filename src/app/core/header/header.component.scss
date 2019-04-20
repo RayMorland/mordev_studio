@@ -1,5 +1,5 @@
 .navbar {
-    margin-top: 70px;
+    margin-top: 5vh;
     padding: 0 5vw 0 0;
     display: flex;
     flex-direction: row;
@@ -40,21 +40,29 @@ li {
 .logo-home-link {
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    // color: rgb(0, 0, 0);
     font-weight: 800;
     font-size: 3vw;
     line-height: 3vw;
+    transition: all .45s;
 }
 
 .header-nav-link {
     text-decoration: none;
     color: black;
     font-family: 'Muli', monospace;
-    font-size: .6vw;
+    font-size: .7vw;
     text-transform: uppercase;
     letter-spacing: 3px;
     display: inline-block;
     margin-bottom: 5px;
+    border-bottom: 1px solid rgba(255,255,255,0);
+    transition: all .45s;
+}
+
+.header-nav-link:hover {
+    font-weight: bolder;
+    border-bottom: 1px solid white;
 }
 
 .header-nav-links {

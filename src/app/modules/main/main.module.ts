@@ -12,6 +12,7 @@ import { HomeCaseStudyComponent } from './components/cases/home-case-study/home-
 import { HomeServiceComponent } from './components/services/home-service/home-service.component';
 import { HomeTestimonialsComponent } from './components/testimonials/home-testimonials/home-testimonials.component';
 import { HomeBlogpostsComponent } from './components/blogposts/home-blogposts/home-blogposts.component';
+import { AllCasesComponent } from './components/cases/all-cases/all-cases/all-cases.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { HomeBlogpostsComponent } from './components/blogposts/home-blogposts/ho
     HomeCaseStudyComponent,
     HomeServiceComponent,
     HomeTestimonialsComponent,
-    HomeBlogpostsComponent
+    HomeBlogpostsComponent,
+    AllCasesComponent
   ],
   imports: [
     CommonModule,

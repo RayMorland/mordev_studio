@@ -1,0 +1,46 @@
+.page-heading h1 {
+    color: rgb(223, 223, 223);
+}
+
+.work-page-cases {
+    padding-left: 9vw;
+    padding-right: 9vw;
+    padding-bottom: 0;
+}
+
+.work-page-all-work {
+    padding-right: 12vw;
+    padding-left: 12vw;
+}
+
+.all-work-wrapper {
+
+}
+
+.all-work-nav {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.work-page-all-work-heading {
+    // padding-left: 1.5vw;
+    // padding-right: 1.5vw;
+    margin-bottom: 6vw;
+}
+
+.all-work-nav-letter {
+    margin-right: 20px;
+    font-size: 2vw;
+    border-bottom: 2px solid rgba(0,0,0,0);
+    transition: all .25s;
+    padding-bottom: 0px;
+}
+
+.all-work-nav-letter:hover {
+    border-bottom: 2px solid black;
+    cursor: pointer;
+    // padding-bottom: 5px;
+}

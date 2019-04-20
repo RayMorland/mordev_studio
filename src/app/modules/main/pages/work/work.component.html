@@ -1,10 +1,28 @@
 <div class="main-page-container">
-  <section>
-    <h1>Work</h1>
+  <section class="page-heading">
+    <h1>We put in <span style="color: black">Work</span></h1>
   </section>
-  <section>
+  <section class="work-page-cases">
     <div *ngFor="let case of caseStudies">
       <app-home-case-study [caseStudy]="case"></app-home-case-study>
+    </div>
+  </section>
+  <section class="work-page-all-work">
+    <div class="work-page-all-work-heading">
+      <h1>All Work</h1>
+      <div class="all-work-nav">
+        <div class="all-work-nav-letter">All</div>
+        <div class="all-work-nav-letter">A</div>
+        <div class="all-work-nav-letter">B</div>
+        <div class="all-work-nav-letter">C</div>
+        <div class="all-work-nav-letter">D</div>
+        <div class="all-work-nav-letter">N</div>
+      </div>
+    </div>
+    <div class="all-work-wrapper">
+      <div *ngFor="let case of allCases">
+        <app-all-cases [caseStudy]="case"></app-all-cases>
+      </div>
     </div>
   </section>
 </div>

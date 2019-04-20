@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { HeaderService } from './shared/header/header.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,8 @@ export class AppComponent implements OnInit {
   title = 'MordevThree';
 
   constructor(
-    private router: Router
+    private router: Router,
+    private headerService: HeaderService
   ) { }
 
   ngOnInit() {
@@ -18,6 +20,7 @@ export class AppComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
+      this.headerService.setLocation(this.router.url);
       window.scrollTo(0, 0);
     });
   }

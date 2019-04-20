@@ -8,7 +8,8 @@ import { testCases } from 'src/app/shared/testing/test-data';
 })
 export class WorkComponent implements OnInit {
 
-  caseStudies = testCases;
+  caseStudies = testCases.slice(0, 4);
+  allCases = testCases;
 
   constructor() { }
 

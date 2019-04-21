@@ -1,12 +1,42 @@
 .main-footer {
     height: 50vh;
     background-color: rgb(30, 30, 30);
-    padding: 12vw 12vw;
+    padding: 8vw 12vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     color: white;
+}
+
+.left-footer {
+    width: 50%;
+}
+
+.middle-footer {
+    width: 25%;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.right-footer {
+    width: 25%;
+}
+
+.middle-footer, .right-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.footer-logo {
+    font-size: 1.75vw;
+    line-height: 1.75vw;
 }
 
 .footer-nav-links {
@@ -18,6 +48,13 @@
 .footer-nav-link {
     color: white;
     text-decoration: none;
+    font-size: 1vw;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+.footer-email {
+    margin-bottom: 30px;
 }
 
 .home-start-section {

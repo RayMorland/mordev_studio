@@ -7,6 +7,7 @@
       <h1>hello there,<br>we are <span style="color: black">mordev studio.</span><br>we design things.</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean
         vel hendrerit ligula. Curabitur ac finibus lorem, eget volutpat ligula. </p>
+      <a href="/about" class="contact-button">Check Us Out</a>
     </div>
   </section>
   <section class="home-section home-work-section">
@@ -33,7 +34,7 @@
   <section class="home-section home-blog-section">
     <div class="home-blog-section-inside">
       <div *ngFor="let blogpost of blogpostData">
-          <app-home-blogposts [blogpost]="blogpost"></app-home-blogposts>
+        <app-home-blogposts [blogpost]="blogpost"></app-home-blogposts>
       </div>
     </div>
   </section>

@@ -2,4 +2,33 @@
   <section class="page-heading">
     <h1>A little <span style="color: black">About</span> us.</h1>
   </section>
+  <section class="about-description">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean
+      vel hendrerit ligula. Curabitur ac finibus lorem, eget volutpat ligula.</p>
+  </section>
+  <!-- <section class="about-services-wrapper">
+    <div class="section-heading">
+      <h1>Our Services</h1>
+    </div>
+    <div *ngFor="let service of services">
+      <app-home-service [service]="service"></app-home-service>
+      <app-large-services [service]="service"></app-large-services>
+    </div>
+  </section> -->
+  <section class="about-team-wrapper">
+    <div class="section-heading">
+      <h1>The Team</h1>
+    </div>
+    <div *ngFor="let teamMember of teamMembers">
+      <app-team-member [teamMember]="teamMember"></app-team-member>
+    </div>
+  </section>
+  <section class="about-blogposts-wrapper">
+    <div class="section-heading">
+      <h1>Our Latest Words</h1>
+    </div>
+    <div *ngFor="let blogpost of blogposts">
+      <app-home-blogposts [blogpost]="blogpost"></app-home-blogposts>
+    </div>
+  </section>
 </div>

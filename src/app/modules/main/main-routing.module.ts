@@ -8,15 +8,21 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { BlogPostComponent } from './pages/blog-post/blog-post.component';
 import { CaseStudyComponent } from './pages/case-study/case-study.component';
+import { TeamMemberPageComponent } from './pages/team-member-page/team-member-page.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ServicePageComponent } from './pages/service-page/service-page.component';
 
 const mainRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'about/:id', component: TeamMemberPageComponent },
   { path: 'work', component: WorkComponent },
   { path: 'work/:id', component: CaseStudyComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'blog', component: BlogComponent },
-  { path: 'blog/:id', component: BlogPostComponent }
+  { path: 'blog/:id', component: BlogPostComponent },
+  { path: 'services', component: ServicesComponent },
+  { path: 'services/:id', component: ServicePageComponent }
 ];
 
 @NgModule({

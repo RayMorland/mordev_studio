@@ -1,21 +1,38 @@
 <header class="navbar" [ngClass]="{'white': headerWhite}">
-  <div  class="left-navbar">
-    <a #logo routerLink="/" class="logo-home-link">m.</a>
+  <div class="left-navbar">
+    <a #logo routerLink="/" class="logo-home-link">mordev studio.</a>
   </div>
-  <div class="right-navbar">
-    <ul class="header-nav-links">
+  <!-- <div class="right-navbar">
+  <ul class="header-nav-links">
       <li>
         <a #work routerLink="/work" class="header-nav-link">Work</a>
-      </li>
-      <li>
-        <a #blog routerLink="/blog" class="header-nav-link">Blog</a>
       </li>
       <li>
         <a #about routerLink="/about" class="header-nav-link">About</a>
       </li>
       <li>
-        <a #contact routerLink="/contact" class="header-nav-link">Contact</a>
+        <a #about routerLink="/about" class="header-nav-link">Services</a>
       </li>
-    </ul>
+      <li>
+        <a #blog routerLink="/blog" class="header-nav-link">Blog</a>
+      </li>
+    </ul> 
+  </div> -->
+  <div class="center-navbar">
+    <div class="header-nav-links">
+      <a #work routerLink="/work" class="header-nav-link">Work</a>
+      <a #about routerLink="/about" class="header-nav-link">About</a>
+      <a #services routerLink="/services" class="header-nav-link">Services</a>
+      <a #blog routerLink="/blog" class="header-nav-link">Blog</a>
+    </div>
+  </div>
+  <div class="right-navbar">
+    <!-- <div class="header-nav-links">
+      <a #work routerLink="/work" class="header-nav-link">Work</a>
+      <a #about routerLink="/about" class="header-nav-link">About</a>
+      <a #about routerLink="/about" class="header-nav-link">Services</a>
+      <a #blog routerLink="/blog" class="header-nav-link">Blog</a>
+    </div> -->
+      <a #contact routerLink="/contact" class="contact-button">Contact Us</a> 
   </div>
 </header>

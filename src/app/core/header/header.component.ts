@@ -20,6 +20,7 @@ export class HeaderComponent implements OnInit {
   @ViewChild('blog') blog: ElementRef;
   @ViewChild('about') about: ElementRef;
   @ViewChild('contact') contact: ElementRef;
+  @ViewChild('services') services: ElementRef;
 
   @HostListener('window:scroll', []) onWindowScroll() {
     if (this.url.split('/')[1] === 'work' && this.url.split('/').length >= 3) {
@@ -28,13 +29,17 @@ export class HeaderComponent implements OnInit {
         this.work.nativeElement.style.color = 'black';
         this.blog.nativeElement.style.color = 'black';
         this.about.nativeElement.style.color = 'black';
-        this.contact.nativeElement.style.color = 'black';
+        this.contact.nativeElement.style.color = 'rgb(30,30,30)';
+        this.contact.nativeElement.style.border = '2px solid rgb(30,30,30)';
+        this.services.nativeElement.style.color = 'black';
       } else if (window.scrollY < window.innerHeight) {
         this.logo.nativeElement.style.color = 'white';
         this.work.nativeElement.style.color = 'white';
         this.blog.nativeElement.style.color = 'white';
         this.about.nativeElement.style.color = 'white';
         this.contact.nativeElement.style.color = 'white';
+        this.contact.nativeElement.style.border = '2px solid rgb(255,255,255)';
+        this.services.nativeElement.style.color = 'white';
       }
     }
   }
@@ -63,12 +68,16 @@ export class HeaderComponent implements OnInit {
       this.blog.nativeElement.style.color = 'white';
       this.about.nativeElement.style.color = 'white';
       this.contact.nativeElement.style.color = 'white';
+      this.contact.nativeElement.style.border = '2px solid rgb(255,255,255)';
+      this.services.nativeElement.style.color = 'white';
     } else {
       this.logo.nativeElement.style.color = 'black';
       this.work.nativeElement.style.color = 'black';
       this.blog.nativeElement.style.color = 'black';
       this.about.nativeElement.style.color = 'black';
-      this.contact.nativeElement.style.color = 'black';
+      this.contact.nativeElement.style.color = 'rgb(30,30,30)';
+      this.contact.nativeElement.style.border = '2px solid rgb(30,30,30)';
+      this.services.nativeElement.style.color = 'black';
     }
   }
 

@@ -1,0 +1,10 @@
+<div *ngIf="teamMember" class="team-member">
+  <div class="team-member-inside" (click)="navigateTo()">
+    <div class="team-member-photo" [ngStyle]="setStyles()">
+      <div class="team-member-filter"></div>
+      <div class="team-member-info">
+        <h2>{{ teamMember.name }}</h2>
+      </div>
+    </div>
+  </div>
+</div>

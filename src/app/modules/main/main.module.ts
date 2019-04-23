@@ -13,6 +13,11 @@ import { HomeServiceComponent } from './components/services/home-service/home-se
 import { HomeTestimonialsComponent } from './components/testimonials/home-testimonials/home-testimonials.component';
 import { HomeBlogpostsComponent } from './components/blogposts/home-blogposts/home-blogposts.component';
 import { AllCasesComponent } from './components/cases/all-cases/all-cases/all-cases.component';
+import { LargeServicesComponent } from './components/services/large-services/large-services.component';
+import { TeamMemberComponent } from './components/team/team-member/team-member.component';
+import { TeamMemberPageComponent } from './pages/team-member-page/team-member-page.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ServicePageComponent } from './pages/service-page/service-page.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { AllCasesComponent } from './components/cases/all-cases/all-cases/all-ca
     HomeServiceComponent,
     HomeTestimonialsComponent,
     HomeBlogpostsComponent,
-    AllCasesComponent
+    AllCasesComponent,
+    LargeServicesComponent,
+    TeamMemberComponent,
+    TeamMemberPageComponent,
+    ServicesComponent,
+    ServicePageComponent
   ],
   imports: [
     CommonModule,

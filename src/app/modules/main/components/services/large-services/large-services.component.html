@@ -1,0 +1,8 @@
+<div *ngIf="service" class="large-service">
+  <div class="service-left">
+    <h2>{{ service.title }}</h2>
+  </div>
+  <div class="service-right">
+    <div class="service-right-inside" [ngStyle]="setStyles()"></div>
+  </div>
+</div>

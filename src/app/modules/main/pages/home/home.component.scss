@@ -35,7 +35,7 @@
 }
 
 .landing-text-wrapper h1 {
-    color: rgb(223, 223, 223);
+    color: rgb(189, 189, 189);
     margin-top: 100px;
     margin-bottom: 50px;
 }
@@ -63,8 +63,8 @@
 }
 
 .home-work-section, .home-services-section, .home-blog-section {
-    padding-left: 9vw;
-    padding-right: 9vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .home-about-section, .home-testimonials-section, .home-start-section {
@@ -81,7 +81,7 @@
 .home-about-section-inside, .home-testimonials-section-inside {
     padding: 6vw 6vw 6vw 6vw;
     height: 100%;
-    width: 76vw;
+    width: 88vw;
     position: relative;
     background: rgb(30, 30, 30);
     color: rgb(223, 223, 223);
@@ -154,4 +154,8 @@
 
 .home-start-section-inside {
     color: rgb(223, 223, 223);
+}
+
+.contact-button {
+    margin-top: 50px;
 }

@@ -101,10 +101,11 @@ export const testCases = [
         'image': 'https://images.unsplash.com/photo-1555744038-d0bf77748106?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
         'content': ''
     },
-]
+];
 
 export const testServices = [
     {
+        _id: '1',
         'title': 'Branding',
         'description': 'Short Description',
         'services': [
@@ -115,6 +116,7 @@ export const testServices = [
         'primaryColor': 'blue'
     },
     {
+        _id: '2',
         'title': 'Design',
         'description': 'Short Description',
         'services': [
@@ -125,6 +127,7 @@ export const testServices = [
         'primaryColor': 'red'
     },
     {
+        _id: '3',
         'title': 'Web',
         'description': 'Short Description',
         'services': [
@@ -133,7 +136,7 @@ export const testServices = [
         'image': 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80',
         'content': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et venenatis quam, nec condimentum nisi. Aenean vel hendrerit ligula.'
     },
-]
+];
 
 export const testBlogposts =
     [
@@ -181,7 +184,7 @@ export const testBlogposts =
             'content': '',
             'date': 'April 15, 2019'
         }
-    ] 
+    ];
 
 
 export const testTestimonials = [
@@ -200,4 +203,17 @@ export const testTestimonials = [
         'name': 'Billy Bob',
         'company': 'Company Inc.'
     }
-]
+];
+
+export const testTeam = [
+    {
+        _id: '1',
+        name: 'Raymond Morland',
+        image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+    },
+    {
+        _id: '2',
+        name: 'Sarah Morland',
+        image: 'https://images.unsplash.com/photo-1509868918748-a554ad25f858?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'
+    }
+];

@@ -1,3 +1,22 @@
 .page-heading h1 {
     color: rgb(223, 223, 223);
 }
+
+.section-heading {
+    padding: 3vw;
+}
+
+.about-services-wrapper, .about-team-wrapper, .about-blogposts-wrapper {
+    padding-left: 9vw;
+    padding-right: 9vw;
+    padding-bottom: 0;
+}
+
+.about-team-wrapper, .about-blogposts-wrapper {
+    padding-top: 0;
+}
+
+.about-description p {
+    width: 50%;
+    font-size: 2vw;
+}

@@ -1,0 +1,11 @@
+<div class="main-page-container">
+  <section class="page-heading services-page-wrapper">
+    <h1>Our Services</h1>
+  </section>
+  <section class="services-grid">
+    <div *ngFor="let service of services">
+      <app-home-service [service]="service"></app-home-service>
+      <!-- <app-large-services [service]="service"></app-large-services> -->
+    </div>
+  </section>
+</div>

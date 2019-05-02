@@ -12,4 +12,8 @@ export class CaseStudyService {
   getCaseStudy(id: string): Observable<any> {
     return of(testCases.find(caseStudy => caseStudy._id === id));
   }
+
+  getCaseStudyBySequence(sequence): Observable<any> {
+    return of(testCases.find(caseStudy => caseStudy.sequence === sequence));
+  }
 }

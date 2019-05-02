@@ -55,6 +55,8 @@ section {
 
 .page-heading {
     padding-top: 40vh;
+    height: 100vh;
+    position: relative;
 }
 
 .contact-button {
@@ -63,18 +65,86 @@ section {
     background-color: rgba(30,30,30, 0);
     color: rgb(30,30,30);
     text-decoration: none;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1vw;
     line-height: 2vw;
     font-weight: 400;
-    padding: .75vw 1.25vw;
+    padding: .75vw 1.75vw;
     transition: all .25s;
+    border-radius: 3.5vw;
 }
 
 .contact-button:hover {
     background-color: rgba(30,30,30, 1);
     color: white !important;
+}
+
+.about-description p {
+    width: 50%;
+    font-size: 2vw;
+}
+
+.lrg-background-text {
+    height: 100vh;
+    top: 0;
+    left: 25vw;
+    position: absolute;
+    text-align: center;
+    padding-top: 40vh;
+}
+
+.lrg-background-text h1 {
+    font-size: 50vh;
+    font-weight: 800;
+    z-index: 1;
+    color: rgba(255,255,255,1);
+    white-space: nowrap;
+    text-shadow: 0 0 200px rgba(246,246,246,.5);
+}
+
+.landing-text-wrapper {
+    // background-color: rgb(240, 240, 240);
+    color: rgb(31, 31, 31);
+    bottom: 0;
+    position: relative;
+    left: 0;
+    padding-right: 12vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 2;
+    padding-bottom: 6vw;
+}
+
+.heading-text-wrapper {
+    color: rgb(31, 31, 31);
+    bottom: 0;
+    position: relative;
+    left: 0;
+    padding-right: 12vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    z-index: 2;
+}
+
+.landing-text-wrapper h1{
+    color: rgb(189, 189, 189);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.heading-text-wrapper h1 {
+    color: rgb(189, 189, 189);
+    margin-bottom: 50px;
+}
+
+.landing-text-wrapper p, .heading-text-wrapper p {
+    width: 60%;
 }

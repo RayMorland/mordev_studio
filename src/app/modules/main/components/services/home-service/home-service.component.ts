@@ -30,4 +30,8 @@ export class HomeServiceComponent implements OnInit {
   openServiceInfo(): void {
     this.infoOpen = !this.infoOpen;
   }
+
+  navigateTo(): void {
+    this.router.navigate(['/services/' + this.service._id]);
+  }
 }

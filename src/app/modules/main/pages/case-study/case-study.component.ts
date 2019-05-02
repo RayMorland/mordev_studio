@@ -12,6 +12,9 @@ export class CaseStudyComponent implements OnInit {
 
   @Input() caseStudy: any;
 
+  currentCaseStudy: any;
+  nextCaseStudy: any;
+
   constructor(
     private route: ActivatedRoute,
     private caseStudyService: CaseStudyService,
@@ -25,7 +28,24 @@ export class CaseStudyComponent implements OnInit {
   getCaseStudy(): void {
     const id = this.route.snapshot.paramMap.get('id');
     this.caseStudyService.getCaseStudy(id)
-      .subscribe(caseStudy => this.caseStudy = caseStudy);
+      .subscribe(caseStudy => {
+        this.caseStudy = caseStudy;
+        if (this.caseStudy.featured) {
+          this.currentCaseStudy = this.caseStudy.sequence;
+          this.getNextCaseStudy();
+        }
+      });
+  }
+
+  getNextCaseStudy(): void {
+    let next = 0;
+    if (this.currentCaseStudy === 4) {
+      next = 1;
+    } else {
+      next++;
+    }
+    this.caseStudyService.getCaseStudyBySequence(next)
+    .subscribe(caseStudy => this.nextCaseStudy = caseStudy);
   }
 
   goBack(): void {

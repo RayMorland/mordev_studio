@@ -18,12 +18,12 @@ export class ServicePageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getBlogpost();
+    this.getService();
   }
 
-  getBlogpost(): void {
+  getService(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.service.getService(id)
+    this.servicesService.getService(id)
       .subscribe(service => this.service = service);
   }
 

@@ -1,6 +1,8 @@
 export const testCases = [
     {
-        '_id': '1',
+        _id: '1',
+        featured: true,
+        sequence: 1,
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -12,6 +14,8 @@ export const testCases = [
     },
     {
         '_id': '2',
+        featured: true,
+        sequence: 2,
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -24,6 +28,8 @@ export const testCases = [
     {
         '_id': '3',
         'title': 'Company',
+        featured: true,
+        sequence: 3,
         'description': 'Short Description',
         'services': [
             'Branding'
@@ -33,6 +39,8 @@ export const testCases = [
     },
     {
         '_id': '4',
+        featured: true,
+        sequence: 4,
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -43,6 +51,8 @@ export const testCases = [
     },
     {
         '_id': '5',
+        featured: false,
+        sequence: 1,
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -53,6 +63,8 @@ export const testCases = [
     },
     {
         '_id': '6',
+        featured: false,
+        sequence: 1,
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -63,6 +75,8 @@ export const testCases = [
     },
     {
         '_id': '7',
+        featured: false,
+        sequence: 1,
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -73,6 +87,8 @@ export const testCases = [
     },
     {
         '_id': '8',
+        featured: false,
+        sequence: 1,
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -83,6 +99,8 @@ export const testCases = [
     },
     {
         '_id': '9',
+        featured: false,
+        sequence: 1,
         'title': 'Company',
         'description': 'Short Description',
         'services': [
@@ -93,6 +111,8 @@ export const testCases = [
     },
     {
         '_id': '10',
+        featured: false,
+        sequence: 1,
         'title': 'Company',
         'description': 'Short Description',
         'services': [

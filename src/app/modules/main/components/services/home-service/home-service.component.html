@@ -4,6 +4,7 @@
     <div class="service-info" [ngClass]="{'open': infoOpen}">
       <div class="service-info-inside" [ngClass]="{'open': infoOpen}">
         <p>{{ service.content }}</p>
+        <a (click)="navigateTo()">Learn More</a>
       </div>
     </div>
     <div class="service-title-wrapper" [ngClass]="{'open': infoOpen}">

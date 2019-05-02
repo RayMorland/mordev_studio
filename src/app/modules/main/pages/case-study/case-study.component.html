@@ -3,5 +3,11 @@
     <div class="case-study-heading-filter"></div>
     <h1 class="case-study-heading-company">{{ caseStudy.title }}</h1>
   </section>
-  <section class="case-study-content"></section>
+  <section class="case-study-content">
+    <h1>Content</h1>
+  </section>
+  <section *ngIf="caseStudy.featured" class="next-case-study-wrapper">
+      <h3>Next Case Study</h3>
+      <h1>{{ nextCaseStudy.title }}</h1>
+    </section>
 </div>

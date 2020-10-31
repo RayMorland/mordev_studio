@@ -1,4 +1,4 @@
-# MordevThree
+# Mordev Website Version Three
 
 Third iteration for Mordev Studio's website.
 

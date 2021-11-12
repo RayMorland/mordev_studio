@@ -6,6 +6,5 @@ Third iteration for Mordev Studio's website.
 
 -Angular
 
-# Status
-
-Not yet complete. Could possibly be used as a template for a creative agency website.
+# Live Link
+http://mordev-3point0-sitepreview.s3-website.ca-central-1.amazonaws.com/
